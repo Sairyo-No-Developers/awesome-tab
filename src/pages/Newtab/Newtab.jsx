@@ -1,5 +1,9 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
+import {
+    MouseParallaxChild,
+    MouseParallaxContainer,
+} from 'react-parallax-mouse';
 import './Newtab.scss';
 
 const getTime = () => {
@@ -33,10 +37,14 @@ const Newtab = () => {
         };
     }, []);
     return (
-        <div className="App">
+        <MouseParallaxContainer className="App">
             <h1>{time}</h1>
-            <div className="foreground"></div>
-        </div>
+            <MouseParallaxChild
+                className="foreground"
+                factorX={0.008}
+                factorY={0.002}
+            ></MouseParallaxChild>
+        </MouseParallaxContainer>
     );
 };
 
