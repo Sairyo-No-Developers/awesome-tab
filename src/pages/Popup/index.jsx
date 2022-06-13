@@ -1,9 +1,13 @@
-import React from 'react';
-import { render } from 'react-dom';
-
-import Popup from './Popup';
 import './index.css';
+var newURL = 'chrome://newtab';
+try {
+    chrome.tabs.create({ url: newURL });
+} catch (error) {}
 
-render(<Popup />, window.document.querySelector('#app-container'));
+try {
+    edge.tabs.create({ url: newURL });
+} catch (error) {}
+
+// render(<Popup />, window.document.querySelector('#app-container'));
 
 if (module.hot) module.hot.accept();

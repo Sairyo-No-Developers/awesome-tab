@@ -1,2 +1,4 @@
-console.log('This is the background page.');
-console.log('Put the background scripts here.');
+chrome.browserAction.onClicked.addListener(function (activeTab) {
+    var newURL = 'http://stackoverflow.com/';
+    chrome.tabs.create({ url: newURL });
+});
