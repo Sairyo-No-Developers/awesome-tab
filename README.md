@@ -22,17 +22,11 @@
     <img src="https://img.shields.io/github/contributors/Sairyo-No-Developers/awesome-tab" />
 </div>
 
----
-
 ## Screenshot
 
 <div>
 <img src="src/assets/img/screenshot.jpg" />
 </div>
-
-
-
----
 
 ## Contributors
 
@@ -45,16 +39,8 @@
 </table>
 </div>
 
-
-
----
-
 ## License
 
 **MIT**
-
-
-
----
 
 ### Made with ❤️ by [Sairyö No Developers](https://www.sairyonodevs.in/)
