@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useEffect } from 'react';
 import {
     MouseParallaxChild,
@@ -18,14 +17,14 @@ const Newtab = () => {
     const [time, setTime] = React.useState(() => getTime());
 
     useEffect(async () => {
-        try {
-            let res = await axios.get('http://localhost:5000');
-            console.log(res.data);
-            console.log(window.localStorage.getItem('test'));
-            window.localStorage.setItem('test', 'test');
-        } catch (error) {
-            console.error(error);
-        }
+        // try {
+        //     let res = await axios.get('http://localhost:5000');
+        //     console.log(res.data);
+        //     console.log(window.localStorage.getItem('test'));
+        //     window.localStorage.setItem('test', 'test');
+        // } catch (error) {
+        //     console.error(error);
+        // }
         let i = setInterval(async () => {
             setTime(() => getTime());
         }, 250);

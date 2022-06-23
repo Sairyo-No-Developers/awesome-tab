@@ -1,7 +1,7 @@
 .App {
     width: 100%;
     height: 100%;
-    background: url('../../assets/bg1.jpg');
+    background: url('../../assets/bg2.jpg');
     background-size: cover;
     background-position: center;
 
@@ -16,7 +16,7 @@
 
     h1 {
         font-size: 12rem;
-        margin-bottom: 14rem;
+        margin-bottom: 9rem;
         color: whitesmoke;
         text-shadow: black -1rem 0.5rem 2rem;
     }
@@ -25,15 +25,51 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 999;
+        z-index: 998;
         width: 100%;
         height: 100%;
-        background: url('../../assets/bg1.jpg');
-        mask-image: url('../../assets/bg1-mask.svg');
-        -webkit-mask-image: url('../../assets/bg1-mask.svg');
+        background: url('../../assets/bg2.jpg');
+        mask-image: url('../../assets/bg2-mask.svg');
+        -webkit-mask-image: url('../../assets/bg2-mask.svg');
         -webkit-mask-size: cover;
         -webkit-mask-position: center;
         background-size: cover;
         background-position: center;
+    }
+}
+
+.widget-container {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+
+        h2 {
+            color: whitesmoke;
+            text-shadow: rgba(0, 0, 0, 0.518) 0 0 0.3rem;
+        }
+
+        .inner {
+            display: flex;
+            a {
+                color: whitesmoke;
+                font-size: 1rem;
+                font-weight: bold;
+                text-shadow: rgba(0, 0, 0, 0.518) 0 0 0.3rem;
+                text-decoration: none;
+            }
+
+            .spacer {
+                width: 1rem;
+            }
+        }
     }
 }

@@ -1,6 +1,15 @@
 {
-  "extends": "react-app",
-  "globals": {
-    "chrome": "readonly"
-  }
+    "extends": "react-app",
+    "globals": {
+        "chrome": "readonly"
+    },
+    "rules": {
+        "react/self-closing-comp": [
+            "error",
+            {
+                "component": true,
+                "html": true
+            }
+        ]
+    }
 }
